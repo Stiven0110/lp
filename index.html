@@ -527,89 +527,141 @@
               <img src="./assets/img/pregrados_ucss_online.png" alt="universidades para gente q trabaja, carreras universitarias virtuales en Perú ">
             </div>
             <div class="fondoForm">
-                <div class="form">
-                  <div class="row justify-content-end position-relative" id="formulario">
-                      <!-- <img class="w-100 d-none d-md-none d-lg-block" src="./src/img/Banner_Form1.webp" alt="">
-                      <img class="w-100 d-none d-md-block d-lg-none" src="./src/img/Bannerform_tablet.webp" alt=""> -->
-                      <div class="content p-5 p-md-0">
-                          <form action="" method="post" data-ic-profiling-form="FORM_MS">
-                              <h2 class="text-center tCD">Carreras a distancia</h2>
-                              <h4 class="text-center">Postula aquí</h4>
-                              <p class="text-center">
-                                Te invitamos a compartir tus datos para que nuestro equipo de admisiones te contacte y conozcas los beneficios de nuestros programas
-                              </p>
-                              <p class="tagForm">Nombres*</p>
-                              <input type="text" name="firstname" id="firstname" placeholder="Nombres" class="form-control  mb-1" required>
-                              <p class="tagForm">Apellidos*</p>
-                              <input type="text" name="lastname"  id="lastname" placeholder="Apellidos" class="form-control  mb-1" required>
-                              <p class="tagForm">Correo electrónico*</p>
-                              <input type="text" name="email" id="email" placeholder="Correo Electrónico" class="form-control  mb-1" required>
-                              <!-- <input type="text" name="identificationNumber"  id="identificationNumber" placeholder="DNI" class="form-control  mb-1" required> -->
-                              <p class="tagForm">Celular*</p>
-                              <input type="text" name="phone" id="phone" placeholder="Celular" class="form-control  mb-1" required>
-                              <p class="tagForm">Programa principal de interés*</p>
-                              <select name="program" id="program" class="form-control  mb-1"  required>
-                                <option value="">Selecciona un programa</option>
-                                <option id="P72" value="P72">Maestría en Psicopedagogía y Orientación <br>  Tutorial Educativa online</option>
-                                <option id="P70" value="P70">Maestría en Gestión e Innovación Educativa online</option>
-                                <option id="P69" value="P69">Maestría en Administración de Negocios y Finanzas Internacionales - MBA Internacional online</option>
-                                <option id="P68" value="P68">Maestría en Administración Pública online</option>
-                                <option id="P71" value="P71">Maestría en Bioética y Bioderecho online</option>
+              <section class="bg-rojo blanco col-12">
+                <div class="row justify-content-center py-4 py-md-5">
+                  <div class="text-center contentFormTxt">
+                      <h2 class="avTittle">
+                          Carreras a distancia 
+                      </h2>
+                      <h3>Postula aquí</h3>
+                      <p>
+                          Te invitamos a compartir tus datos para que nuestro equipo de admisiones te contacte y conozcas los beneficios de nuestros programas
+                      </p>
+                      <form
+                          class="row"
+                          action=""
+                          method="post"
+                          id="form-registrarme"
+                          data-ic-profiling-form="FORM_MS"
+                      >
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Nombres"
+                                  name="firstname"
+                                  id="firstname"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Apellidos"
+                                  name="lastname"
+                                  id="lastname"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Teléfono"
+                                  name="phone"
+                                  id="phone"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Correo electrónico"
+                                  name="email"
+                                  id="email"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <select
+                                  name="program"
+                                  id="program"
+                                  class="form-control py-1 px-3 w-100"
+                                  required
+                              >
+                                  <option value="">Selecciona un programa</option>
+                                  <!-- <option id="P66" value="P66">Pregrado en Psicología online</option> -->
+                                  <option id="P65" value="P65">Pregrado en Derecho online</option>
+                                  <!-- <option id="P67" value="P67">Pregrado en Nutrición y Dietética online</option> -->
+                                  <option id="P63" value="P63">Pregrado en Contabilidad online</option>
+                                  <option id="P62" value="P62">Pregrado en Administración online</option>
+                                  <option id="P64" value="P64">Pregrado en Economía online</option>
                               </select>
-                              <br>
-                              <label class="auth d-block w-100 m-0" for="">
-                                  <input
-                                      type="checkbox"
-                                      name="contactByWhatsapp"
-                                      id="contactByWhatsapp"
-                                      class="mr-2" value="true"
-                                  >
-                                  <small>¿Acepta ser contactado por WhatsApp?</small>
+                          </div>
+                          <div class="col-md-12 mt-3 text-left">
+                              <input type="checkbox" name="contactByWhatsapp" id="contactByWhatsapp">
+                              &nbsp;
+                              <label for="">
+                                  ¿Acepta ser contactado por WhatsApp?
                               </label>
-                              <label class="auth d-block w-100  m-0 terms" for="">
-                                  <input
-                                      type="checkbox"
-                                      name="termsAndConditionsAccepted"
-                                      id="termsAndConditionsAccepted"
-                                      class="mr-2"
-                                  >
-                                  <small class="termsSmall">
-                                    He leído y acepto la
-                                      
-                                      <a href="https://www.ucss.edu.pe/terminos-condiciones" target="_blank" class="blanco">
-                                          <u>Política de privacidad</u>
-                                      </a>
-                                  </small>
+                          </div>
+                          <div class="col-md-12 text-left btnAcepto">
+                              <input
+                                  type="checkbox"
+                                  name="termsAndConditionsAccepted"
+                                  id="termsAndConditionsAccepted"
+                                  value="true"
+                              >
+                              &nbsp;
+                              <label for="" required class="aceptoP">
+                                  He leído y acepto la 
+                                  <a href="https://www.ucss.edu.pe/terminos-condiciones" target="_blank" rel="noopener noreferrer">
+                                      <div class="politicas">
+                                          <u> Política de Privacidad.</u>
+                                      </div>
+                                  </a>
                               </label>
-                              <br>
-                              <button class="btn bg-azul blanco" id="btn-enviar" onclick="ms()" style="margin-right: 37rem;background-color:#333E48;color: white;">
-                                  Enviar
-                                  <!-- <img src="./src/img/chevron-right-solid.svg" alt="Chevron Right Icon" style="width: 15px; height: 15px; vertical-align: middle; margin-left: 5px;  filter: brightness(0) invert(1); padding-bottom:2px;"> -->
-                              </button>
-                              <script>
-                                  function ms() {
-                                      location.href = "https://virtual.ucss.edu.pe/t/p/B_Posgrados/content";
-                                  }
-                              </script>
-                              <input name="habeasDataAccepted"
+                          </div>
+                          <input
+                              name="habeasDataAccepted"
                               id="habeasDataAccepted"
-                              style="display:none;"
-                              value="true" />
-                              <label for="habeasDataAccepted"
-                                  style="display:none;">
-                                  Habeasdata
-                              </label>
-                              <input name="academicLevel"
+                              style="display: none;"
+                              value="true"
+                          >
+                          <label for="habeasDataAccepted" style="display: none;">
+                              Habeasdata
+                          </label>
+                          <input
+                              name="academicLevel"
                               id="academicLevel"
                               style="display:none;"
-                              value="PG" />
-                              <label style="display:none;">
-                                  academicLevel
-                              </label>
-                          </form>
-                      </div>
+                              value="PR"
+                          >
+                          <label style="display:none;">
+                              academicLevel
+                          </label>
+                          <div class="col-4 col-md-2 mt-3">
+                              <button
+                                  type="submit"
+                                  class="btn w-100 btn bg-verde blanco"
+                                  id="submit-btn"
+                                  onclick="ms()"
+                                  class=""
+                              >
+                                  ENVIAR
+                              </button>
+                              <script>
+                              function ms() {
+                                  location.href = "https://virtual.ucss.edu.pe/t/p/B_Pregrado/content";
+                              }
+                              </script>
+                          </div>
+                      </form>
                   </div>
-              </div>
+                </div>
+            </section>
             </div>
           </div>
         </section>
@@ -1028,88 +1080,141 @@
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
             <div class="fondoForm">
-              <div class="form">
-                <div class="row justify-content-end position-relative" id="formulario">
-                    <!-- <img class="w-100 d-none d-md-none d-lg-block" src="./src/img/Banner_Form1.webp" alt="">
-                    <img class="w-100 d-none d-md-block d-lg-none" src="./src/img/Bannerform_tablet.webp" alt=""> -->
-                    <div class="content p-5 p-md-0">
-                        <form action="" method="post" data-ic-profiling-form="FOR_MS">
-                            <h4 class="text-center">Postula aquí</h4>
-                            <p class="text-center">
-                              Te invitamos a compartir tus datos para que nuestro equipo de admisiones te contacte y conozcas los beneficios de nuestros programas
-                            </p>
-                            <p class="tagForm">Nombres*</p>
-                            <input type="text" name="firstname" id="firstname" placeholder="Nombres" class="form-control  mb-1" required>
-                            <p class="tagForm">Apellidos*</p>
-                            <input type="text" name="lastname"  id="lastname" placeholder="Apellidos" class="form-control  mb-1" required>
-                            <p class="tagForm">Correo electrónico*</p>
-                            <input type="text" name="email" id="email" placeholder="Correo Electrónico" class="form-control  mb-1" required>
-                            <!-- <input type="text" name="identificationNumber"  id="identificationNumber" placeholder="DNI" class="form-control  mb-1" required> -->
-                            <p class="tagForm">Celular*</p>
-                            <input type="text" name="phone" id="phone" placeholder="Celular" class="form-control  mb-1" required>
-                            <p class="tagForm">Programa principal de interés*</p>
-                            <select name="program" id="program" class="form-control  mb-1"  required>
-                              <option value="">Selecciona un programa</option>
-                              <option id="P72" value="P72">Maestría en Psicopedagogía y Orientación <br>  Tutorial Educativa online</option>
-                              <option id="P70" value="P70">Maestría en Gestión e Innovación Educativa online</option>
-                              <option id="P69" value="P69">Maestría en Administración de Negocios y Finanzas Internacionales - MBA Internacional online</option>
-                              <option id="P68" value="P68">Maestría en Administración Pública online</option>
-                              <option id="P71" value="P71">Maestría en Bioética y Bioderecho online</option>
-                            </select>
-                            <br>
-                            <label class="auth d-block w-100 m-0" for="">
-                                <input
-                                    type="checkbox"
-                                    name="contactByWhatsapp"
-                                    id="contactByWhatsapp"
-                                    class="mr-2" value="true"
-                                >
-                                <small>¿Acepta ser contactado por WhatsApp?</small>
-                            </label>
-                            <label class="auth d-block w-100  m-0 terms" for="">
-                                <input
-                                    type="checkbox"
-                                    name="termsAndConditionsAccepted"
-                                    id="termsAndConditionsAccepted"
-                                    class="mr-2"
-                                >
-                                <small class="termsSmall">
-                                  He leído y acepto la
-                                    
-                                    <a href="https://www.ucss.edu.pe/terminos-condiciones" target="_blank" class="blanco">
-                                        <u>Política de privacidad</u>
-                                    </a>
-                                </small>
-                            </label>
-                            <br>
-                            <button class="btn bg-azul blanco" id="btn-enviar" onclick="ms()" style="margin-right: 37rem;background-color:#333E48;color: white;">
-                                Enviar
-                                <!-- <img src="./src/img/chevron-right-solid.svg" alt="Chevron Right Icon" style="width: 15px; height: 15px; vertical-align: middle; margin-left: 5px;  filter: brightness(0) invert(1); padding-bottom:2px;"> -->
-                            </button>
-                            <script>
-                                function ms() {
-                                    location.href = "https://virtual.ucss.edu.pe/t/p/B_Posgrados/content";
-                                }
-                            </script>
-                            <input name="habeasDataAccepted"
-                            id="habeasDataAccepted"
-                            style="display:none;"
-                            value="true" />
-                            <label for="habeasDataAccepted"
-                                style="display:none;">
-                                Habeasdata
-                            </label>
-                            <input name="academicLevel"
-                            id="academicLevel"
-                            style="display:none;"
-                            value="PG" />
-                            <label style="display:none;">
-                                academicLevel
-                            </label>
-                        </form>
-                    </div>
+              <section class="bg-rojo blanco col-12">
+                <div class="row justify-content-center py-4 py-md-5">
+                  <div class="text-center contentFormTxt">
+                      <h2 class="avTittle">
+                          Carreras a distancia 
+                      </h2>
+                      <h3>Postula aquí</h3>
+                      <p>
+                          Te invitamos a compartir tus datos para que nuestro equipo de admisiones te contacte y conozcas los beneficios de nuestros programas
+                      </p>
+                      <form
+                          class="row"
+                          action=""
+                          method="post"
+                          id="form-registrarme"
+                          data-ic-profiling-form="FORM_MS"
+                      >
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Nombres"
+                                  name="firstname"
+                                  id="firstname"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Apellidos"
+                                  name="lastname"
+                                  id="lastname"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Teléfono"
+                                  name="phone"
+                                  id="phone"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <input
+                                  type="text"
+                                  class="w-100 form-group form-control py-1 px-3"
+                                  placeholder="Correo electrónico"
+                                  name="email"
+                                  id="email"
+                                  required
+                              >
+                          </div>
+                          <div class="col-md-12 my-1 my-md-2">
+                              <select
+                                  name="program"
+                                  id="program"
+                                  class="form-control py-1 px-3 w-100"
+                                  required
+                              >
+                                  <option value="">Selecciona un programa</option>
+                                  <!-- <option id="P66" value="P66">Pregrado en Psicología online</option> -->
+                                  <option id="P65" value="P65">Pregrado en Derecho online</option>
+                                  <!-- <option id="P67" value="P67">Pregrado en Nutrición y Dietética online</option> -->
+                                  <option id="P63" value="P63">Pregrado en Contabilidad online</option>
+                                  <option id="P62" value="P62">Pregrado en Administración online</option>
+                                  <option id="P64" value="P64">Pregrado en Economía online</option>
+                              </select>
+                          </div>
+                          <div class="col-md-12 mt-3 text-left">
+                              <input type="checkbox" name="contactByWhatsapp" id="contactByWhatsapp">
+                              &nbsp;
+                              <label for="">
+                                  ¿Acepta ser contactado por WhatsApp?
+                              </label>
+                          </div>
+                          <div class="col-md-12 text-left btnAcepto">
+                              <input
+                                  type="checkbox"
+                                  name="termsAndConditionsAccepted"
+                                  id="termsAndConditionsAccepted"
+                                  value="true"
+                              >
+                              &nbsp;
+                              <label for="" required class="aceptoP">
+                                  He leído y acepto la 
+                                  <a href="https://www.ucss.edu.pe/terminos-condiciones" target="_blank" rel="noopener noreferrer">
+                                      <div class="politicas">
+                                          <u> Política de Privacidad.</u>
+                                      </div>
+                                  </a>
+                              </label>
+                          </div>
+                          <input
+                              name="habeasDataAccepted"
+                              id="habeasDataAccepted"
+                              style="display: none;"
+                              value="true"
+                          >
+                          <label for="habeasDataAccepted" style="display: none;">
+                              Habeasdata
+                          </label>
+                          <input
+                              name="academicLevel"
+                              id="academicLevel"
+                              style="display:none;"
+                              value="PR"
+                          >
+                          <label style="display:none;">
+                              academicLevel
+                          </label>
+                          <div class="enviarBtn">
+                              <button
+                                  type="submit"
+                                  class="btn w-100 btn bg-verde blanco"
+                                  id="submit-btn"
+                                  onclick="ms()"
+                                  class=""
+                              >
+                                  ENVIAR
+                              </button>
+                              <script>
+                              function ms() {
+                                  location.href = "https://virtual.ucss.edu.pe/t/p/B_Pregrado/content";
+                              }
+                              </script>
+                          </div>
+                      </form>
+                  </div>
                 </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>

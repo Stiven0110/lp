@@ -698,6 +698,27 @@ header a {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.avTittle{
+    margin-top: 0;
+    font-weight: bold;
+}
+.fondoForm h3{
+    margin-top: 0;
+    font-weight: bold;
+}
+.politicas{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.politicas u{
+    color: white;
+}
+.bg-verde{
+    background-color: #6CBDB1;
+}
+.contentFormTxt{
+    color: white;
+}
 .fondoForm form{
     text-align: left;
     color: white;
@@ -965,7 +986,7 @@ header a {
     align-items: center;
 }
 .modalBtn .form-control {
-    width: 70%;
+    width: 100%;
 }
 .modalBtn .auth {
     width: 70%;
@@ -1014,6 +1035,19 @@ header a {
     color: white;
 }
 
+.modalBtn .col-md-12{
+    width: 70% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.modalBtn .enviarBtn{
+    width: 68%;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+
 /*responsive*/
 
 @media(max-width: 574px){
@@ -1023,6 +1057,8 @@ header a {
 }
 
 @media only screen and (max-width: 768px) {
+    
+    
     .testimoniosVideos .owl-nav{
         display: none;
     }
@@ -1081,7 +1117,7 @@ header a {
     }
     #carousel2 .owl-dots{
         position: absolute;
-        top: 43rem;
+        top: 38rem;
         width: 100%;
     }
     #carousel2 .item{
