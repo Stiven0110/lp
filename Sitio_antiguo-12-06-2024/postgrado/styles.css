@@ -1,0 +1,296 @@
+/*---POPUP POST--------*/
+.verde{
+    color: #6cbdb1;
+}
+.btnAcepto{
+    display: flex;
+  }
+  .politicas{
+    margin-left: 3px;
+  }
+  .aceptoP{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    margin-top: 10px;
+  }
+.popup_post {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .popup-content_post {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#ffffff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 900px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .close_post {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color:#000;
+  }
+  .popup-content_post img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  #popup-form {
+    display: none !important;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--gris);
+    z-index: 101;
+  }
+  
+  #popup-form.active {
+    display: block !important;
+  }
+  #popup-form .fa-close  {
+    margin-top: 3rem;
+  }
+  .fa.fa-close {
+    position: absolute;
+    z-index: 200;
+    color: var(--verde);
+    font-size: 24px;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .contenedorBtnAside{
+    width: 90px;
+    height: 25rem;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99;
+    top: 0;
+  }
+  .form-popup .fa-close{
+    color: black;
+    top: 0;
+  }
+  .botonF1{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100%;
+    background: transparent;
+    right: 0;
+    bottom: 0;
+    top: 25rem;
+    position: absolute;
+    margin-right: 1rem;
+    margin-bottom: 16px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 36px;
+    transition: .3s;
+  }
+  .botonF1 img{
+    width: 100%;
+  }
+  span{
+    transition:.5s; 
+  }
+  .botonF1:hover span{
+    transform:rotate(360deg);
+  }
+  .botonF1:active{
+    transform:scale(1.4);
+  }
+
+  
+  @media screen and (max-width: 576px) {
+   
+    .popup-content_post {
+      width: 100%; /* Ajusta el ancho según tu preferencia para hacer el recuadro blanco más grande */
+      max-width: 450px; /* Establece un ancho máximo para evitar que el recuadro sea demasiado grande en pantallas muy pequeñas */
+      padding: 30px; /* Ajusta el padding según tu preferencia para hacer el recuadro blanco más grande */
+    }
+    .popup-content_post img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+  }
+@media screen and (min-width: 992px) {
+    .CEH{
+        font-size: 2rem !important;
+    }
+
+    .cards-carreras h6.categoria {
+        font-size: 24px !important;
+    }
+    .card-pregrado div {
+        max-height: 175px;
+        height: 175px;
+    }
+    .card-pregrado {
+        flex: 0 0 40%;
+    }
+    #bg-ci.posgrados {
+        background: url(./img/banner-desktop.png) !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .politicaP{
+        font-size: 14px !important;
+    }
+    #bg-ci.posgrados {
+        background: url(./img/banner-tablet.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+    .p-3{
+        height: 10rem !important;
+    }
+    .text-md-center{
+        text-align: left !important;
+    }
+    #submit-btn{
+        border-color: #ffffff;
+    }
+}
+#bg-ci.posgrados {
+    background: url(./img/banner-desktop.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 35.5rem;
+}
+.cards-carreras h6.categoria {
+    font-size: 12px;
+}
+
+.cards-carreras h6 .fa {
+    font-size: 18px;
+}
+
+.card-pregrado {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    flex: 0 0 auto !important;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 42px -13px rgba(0, 0, 0, 0.75);
+}
+
+/* Formulario  */
+
+.error::after {
+    content: "*";
+    color: var(--verde);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.error {
+    float: left;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../src/img/icon-select.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    border: 1px solid #dfdfdf;
+    background-size: contain;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 2rem;
+    padding-right: 2rem;
+}
+#avanza-con-ucss-c {
+    top: 25%;
+    left: 10px;
+    color:#000;
+}
+.btn-conocenos-mas{
+    background-color: var(--verde);
+    color:white;
+}
+
+@media screen and (max-width: 768px) {
+    .title-carrera {
+        font-size: 14px;
+    }
+    #submit-btn{
+        border-color: white;
+    }
+    .cards-desktop {
+        display: none;
+    }
+    #bg-ci.posgrados {
+        background: url(./img/banner-mobile.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 300px !important;
+    }
+    .card-pregrado  {
+        height: 400px !important;
+    }
+    .politicaP{
+        font-size: 14px !important;
+    }
+    .accordian-link{
+        width: 90%;
+    }
+    .icon.fa.fa-plus, .icon.fa.fa-minus{
+        right: -35px !important;
+    }
+    h2.categoria{
+        display: flex !important;
+    }
+    .categoria > p{
+        font-size: 14px !important;
+    }
+}
+.btn-show-hide {
+
+    transition: ease-in-out .3s all;
+}
+.btn-show-hide:hover {
+    background-color: var(--verde);
+    color: var(--blanco);
+    transition: ease-in-out .3s all;
+    cursor: pointer;
+} 
