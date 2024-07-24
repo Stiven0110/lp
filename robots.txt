@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /private/
-Disallow: /admin/
-Disallow: /login/
-Disallow: /register/
-Allow: /public/
-Sitemap: https://online.ucss.edu.pe/sitemap.xml

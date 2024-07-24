@@ -5,7 +5,11 @@
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
-    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Mosk400', serif;
+    color: #1A1A1A;
 }
 @font-face {
     font-family: 'Mosk300';
@@ -19,27 +23,18 @@
     font-family: 'Mosk700';
     src: url('./assets/font/Mosk-Bold.ttf');
   }
-body {
-    margin: 0;
-    font-family: 'Mosk400', serif !important;
-    color: #1A1A1A;
-}
+
 html {
     scroll-behavior: smooth;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Mosk700', sans-serif;
-}
+  }
+
 img {
     -webkit-user-drag: none; /* Chrome, Safari, Opera */
     -khtml-user-drag: none; /* Konqueror */
     -moz-user-drag: none; /* Firefox */
     -o-user-drag: none; /* Opera */
 }
-
-
-/* barra de informacion antes de nav */
-.navBlack{
+  .navBlack{
     background-color: #4C4C4C; 
     width: 100%; 
     margin: 0px;
@@ -138,12 +133,6 @@ header .hamburger {
 .navbar .nav-menu .dropdown .opcionesPregrado a:hover{
     color: #6CBDB1;
 }
-.navbar .nav-menu1 .dropdown .opcionesPostgrado a:hover{
-    color: #6CBDB1;
-}
-.navbar .nav-menu1 .dropdown .opcionesPregrado a:hover{
-    color: #6CBDB1;
-}
 header .bar {
     display: block;
     width: 25px;
@@ -181,7 +170,7 @@ header .bar {
 .navbar .logo {
     display: flex;
     align-items: center;
-    width: 66%;
+    width: 60%;
 }
 .navbar .logo img {
     margin-right: 10px;
@@ -192,7 +181,7 @@ header .bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 40%;
+    width: 50%;
 }
 .navbar .nav-menu li {
     position: relative;
@@ -208,7 +197,7 @@ header .bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 40%;
+    width: 50%;
 }
 .navbar .nav-menu1 li {
     position: relative;
@@ -241,18 +230,6 @@ header .bar {
     padding-bottom: 15px;
 }
 
-.navbar .nav-menu  .tituloPostgrado, .navbar .nav-menu .tituloPregrado{
-    color:#6CBDB1;
-}
-.navbar .nav-menu .dropdown a {
-    padding: 10px;
-    white-space: nowrap;
-}
-.navbar .nav-menu li:hover .dropdown {
-    display: block;
-}
-
-
 .navbar .nav-menu1 a {
     text-decoration: none;
     color: #000;
@@ -273,16 +250,43 @@ header .bar {
     padding-bottom: 15px;
 }
 
-.navbar .nav-menu1  .tituloPostgrado, .navbar .nav-menu1 .tituloPregrado{
-    color:#6CBDB1;
+.navbar .nav-menu .dropdown a {
+    padding: 10px 20px;
+    white-space: nowrap;
 }
+.navbar .nav-menu li:hover .dropdown {
+    display: block;
+}
+
 .navbar .nav-menu1 .dropdown a {
-    padding: 10px;
+    padding: 10px 20px;
     white-space: nowrap;
 }
 .navbar .nav-menu1 li:hover .dropdown {
     display: block;
 }
+.testimoniosVideos iframe{
+    border: 0;
+}
+.nav-item .BtnModal{
+    border-radius: 1rem;
+    border-color: transparent;
+    background-color: #E9004C;
+    display: flex !important;
+    font-size: 16px;
+    color: white !important;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navbar .nav-menu  .tituloPostgrado, .navbar .nav-menu .tituloPregrado{
+    color:#6CBDB1;
+}
+.navbar .nav-menu1  .tituloPostgrado, .navbar .nav-menu1 .tituloPregrado{
+    color:#6CBDB1;
+}
+
+
 header li {
     list-style: none;
 }
@@ -291,21 +295,40 @@ header a {
     text-decoration: none;
 }
 
-.owl-dots{
+#carousel1 .owl-dots{
     position: absolute;
-    top: 38rem;
+    top: 27rem;
     width: 100%;
 }
 .owl-theme .owl-dots .owl-dot.active span{
     background: red !important;
 }
-.owl-theme .owl-dots .owl-dot span{
-    border-radius: 0px !important;
-    background: white !important;
+.testimoniosVideos{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.testimoniosVideos .owl-carousel{
+    width: 90% !important;
+}
+.testimoniosVideos .owl-nav{
+    position: absolute;
+    top: 10rem;
+    font-size: 35px;
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    left: -5%;
+    z-index: -1;
+}
+.owl-carousel{
+    height: 35rem;
 }
 /*  */
-
-
+.faq_main_container{
+    margin-bottom: 5rem;
+}
 .BannerGeneral{
     background-image: url(./assets/img/univ-catolica.webp);
     background-repeat: no-repeat;
@@ -337,11 +360,7 @@ header a {
     font-size: 32px;
     font-weight: bold;
     color: #1A1A1A;
-}
-.TxtBannerPricipal .txt_content{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    width: 40%;
 }
 .BannerGeneral .TxtBannerPricipal .txt_red{
     background-color: #E9004C;
@@ -356,25 +375,9 @@ header a {
 .TxtBannerPricipal .txt_red h2{
     margin-bottom: 0;
     color: white;
-    font-size: 29px;
+    font-size: 30px;
     margin-top: 2px;
-}
-.BannerGeneral .TxtBannerPricipal .txt_black{
-    background-color: #333E48;
-    display: flex;
-    width: 25%;
-    border-radius: 0.5rem;
-    text-align: center;
-    margin-bottom: 0;
-    justify-content: center;
     font-weight: 600;
-}
-.BannerGeneral .TxtBannerPricipal .txt_black h2{
-    margin-bottom: 0;
-    color: white;
-    font-size: 29px;
-    margin-top: 2px;
-
 }
 .BannerGeneral .txt_content{
     display: flex;
@@ -386,91 +389,24 @@ header a {
     font-size: 18px;
     margin-top: 10px;
 }
-.BannerCarreras{
-    background-image: url(./assets/img/ucss.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.BannerCarreras .TxtBannerPricipal .txt_bold{
-    width: 35%;
-    font-size: 47px;
-    font-weight: 900;
-    color: #E9004C;
-    margin-bottom: 0;
-    margin-top: 10px;
-}
-.BannerCarreras .TxtBannerPricipal .txt_red{
-    background-color: #E9004C;
-    display: flex;
-    color: white;
-    width: 38%;
-    font-size: 29px;
-    border-radius: 0.5rem;
-    text-align: center;
-    margin-bottom: 0;
-    justify-content: center;
-    font-weight: 600;
-}
 
 .txt_content a{
-    color: #000;
-    text-decoration: none;
+    color: #1A1A1A;
+}
+.txt_content button{
     border-radius: 2rem;
     background-color: #6CBDB1;
+    margin-top: 1rem;
     padding: 10px;
     font-weight: bold;
-    box-shadow: 1px 6px 10px -5px black;
+    box-shadow: 1px 1px 0px black;
     border-color: transparent;
-    width: 9%;
-}
-.txt_content a:hover{
-    color: white;
-}
-.BannerCarreras .hashtag p{
-    margin-top: 2rem;
-}
-.BannerMaestrias{
-    background-image: url(./assets/img/ucss-virtual.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 45rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.BannerMaestrias .TxtBannerPricipal .txt_bold{
-    width: 35%;
-    font-size: 47px;
-    font-weight: 900;
-    color: #1A1A1A;
-    margin-bottom: 0;
-    margin-top: 10px;
-}
-.BannerMaestrias .TxtBannerPricipal .txt_red{
-    background-color: #333E48;
-    display: flex;
-    color: white;
-    width: 20%;
-    font-size: 29px;
-    border-radius: 0.5rem;
-    text-align: center;
-    margin-bottom: 0;
-    justify-content: center;
-    font-weight: 600;
-}
-.BannerMaestrias .hashtag p{
-    margin-top: 2rem;
 }
 .line{
     height: 0.1rem;
     display: block;
-    border: 1px dashed #6CBDB1;    width: 100%;
+    border: 1px dashed #6CBDB1;
+    width: 100%;
     margin-top: 5px;
 }
 .tagTitulo{
@@ -493,6 +429,9 @@ header a {
     align-items: center;
     text-align: center;
 }
+.CardContent{
+    width: 23%;
+}
 .cardImg{
     width: 55%;
     margin-bottom: 1rem;
@@ -503,11 +442,12 @@ header a {
 .margenContentN1{
     margin-top: 1.8rem;
 }
-.long{
-    width: 100% !important;
-}
-.margenContentP{
+/* .margenContentP{
     margin-top: 1.7rem;
+} */
+.txtPreguntasFrecuentes{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .cardImg img{
     width: 100%;
@@ -516,6 +456,9 @@ header a {
 .cardTxt{
     width: 85%;
     font-size: 13px;
+}
+.long{
+    width: 100%;
 }
 .contentGeneral{
     display: flex;
@@ -528,31 +471,45 @@ header a {
 .oferta .contentGeneral{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+.cardGeneralCarreras:hover{
+    box-shadow: -0px 5px 12px #6CBDB1;
+}
+.cardGeneralCarreras a{
+    text-decoration: none !important;
 }
 .oferta .cardTxt{
     width: 100%;
     padding: 20px;
-    font-size: 13px;
-    padding-bottom: 0;
-    height: 100%;
+    font-size: 11px;
+    padding-top: 0;
+    padding-bottom: 35px;
 }
 .oferta .tituloCard{
-    background-color: #4C4C4C;
-    color: white;
+    color: #E9004C;
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
     padding-left: 20px;
+    font-weight: bold;
 }
-.cardGeneralCarreras, .cardGeneralMaestrias{
-    width: 35%;
+.oferta .tituloCard strong{
+    color: black;
+}
+.cardGeneralCarreras{
+    width: 100%;
     border-radius: 1rem;
-    background-color: #D9D9D9;
+    background-color: white;
     height: 100%;
+    display: flex;
+    box-shadow: 0px 1px 1px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .oferta .cardImg {
     width: 100%;
@@ -563,16 +520,35 @@ header a {
     border: transparent;
     border-radius: 1rem;
     padding: 5px;
-    display: flex;
-    width: 100%;
-    font-size: 13px;
-    margin-bottom: 2rem;
-    justify-content: center;
-    text-decoration: none;
+    width: 60%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.oferta .seccBlue{
+    background-color: #004775;
+    padding-top: 10px;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding-left: 20px;
+    padding-bottom: 1px;
+}
+.oferta .seccBlueDerecho{
+    background-color: #008DD5;
+    padding-top: 10px;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding-left: 20px;
+    padding-bottom: 1px;
+}
+.facultad{
+    font-size: 8px;
+    color: white;
+    margin: 0;
+}
+.carrera{
+    font-size: 12px;
+    color: white;
 }
 .oferta .saberMasMaestria{
-    margin-top: 4.5rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     background-color: #E9004C;
     color: white;
     border: transparent;
@@ -580,9 +556,6 @@ header a {
     padding: 5px;
     width: 100%;
     font-size: 13px;
-    justify-content: center;
-    display: flex;
-    text-decoration: none;
 }
 
 .containerGeneralLogros {
@@ -598,10 +571,7 @@ header a {
 .containerPreguntas{
     background-color: #F6F6F6;
 }
-.txtPreguntasFrecuentes{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+
 .acordeonPreguntas .faq_container { border-bottom: 2px solid #ddd; }
 .acordeonPreguntas .faq_question {
   font-size: 1.2rem;
@@ -645,7 +615,7 @@ header a {
   transform: translate(-50%, -50%);
   width: 20px;
   height: 3px;
-  background: #6CBDB1;
+  background: #E9004C;
   border-radius: 3px;
   transition: all 0.5s ease;
 }
@@ -657,7 +627,7 @@ header a {
   transform: translate(-50%, -50%);
   width: 3px;
   height: 20px;
-  background: #6CBDB1;
+  background: #E9004C;
   border-radius: 3px;
   transition: all 0.5s ease;
 }
@@ -670,8 +640,189 @@ header a {
   transition: all 0.5s ease;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 2rem;
+}
+.tCD{
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 27px;
+}
+.formulario label{
+    font-weight: 100 !important;
+}
+.formularioImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.formularioImg img{
+    width: 75%;
+}
+.fondoForm{
+    background-color: #E9004C;
+    width: 45%;
+    border-radius: 1rem;
+    padding: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+.avTittle{
+    margin-top: 0;
+    font-weight: bold;
+}
+.fondoForm h3{
+    margin-top: 0;
+    font-weight: bold;
+}
+.politicas{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.politicas u{
+    color: white;
+}
+.bg-verde{
+    background-color: #6CBDB1;
+}
+.contentFormTxt{
+    color: white;
+}
+.fondoForm form{
+    text-align: left;
+    color: white;
+    gap: 1rem 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.fondoForm form p{
+    color: white;
+    font-family: 'Mosk400', sans-serif !important;
+}
+.fondoForm form h4{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Mosk700', sans-serif !important;
 
+}
+.fondoForm form .tagForm{
+    color: white;
+    margin: 0;
+    margin-top: 1rem;
+}
+#program{
+    color: grey;
+}
+.termsSmall a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+.tituloForm, .txtForm{
+    color: white;
+}
+.tituloForm{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btnEnviar{
+    background-color: #333E48 !important;
+    color: white;
+}
+.btnAcepto,.text-left{
+    display: flex;
+    color: white;
+    align-items: flex-start;
+   
+}
+.aceptoP{
+    width: 80%;
+    display: flex;
+}
+.text-left{
+    margin-top: 1rem;
+    flex-direction: row !important;
+}
+.politicaP{
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.oferta .tag{
+    color: #A2A2A2;
+    margin-bottom:10rem;
+    font-size: 12px;
+}
+.listAspirante li{
+    list-style: none;
+}
+.buttonAspirante{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: flex-start;
+}
+.buttonAspirante .BtnModal2{
+    background-color: #E9004C;
+    color: white;
+    border: transparent;
+    border-radius: 1rem;
+    padding: 8px;
+    width: 26%;
+    font-size: 19px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.aspirantePerfil{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.listAspirante .tagTitulo{
+    padding: 0 !important;
+}
+.listAspirante ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.listAspirante{
+    width: 51%;
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.aspiranteImg{
+    width: 35%;
+}
+
+.aspiranteImg img{
+    width: 85%;
+    margin-top: 2rem;
+}
+.item iframe{
+    width: 100%;
+    height: 25rem;
+}
 
 /* -footer- */
 
@@ -743,15 +894,8 @@ header a {
  color: #4C4C4C;   
 }
 
-.owl-nav{
-    position: absolute;
-    top: 15rem;
-    font-size: 35px;
-    width: 96%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    left: 2%;
+.form-group {
+    margin-bottom: 0;
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
     background: transparent !important;
@@ -761,10 +905,16 @@ header a {
     display: none !important;
 }
 .desk{
-    display: block;
+    display: flex !important;
+    flex-direction: column;
 }
 .desk1{
     display: flex !important;
+}
+.containerForm{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .open-modal-btn {
     cursor: pointer;
@@ -778,22 +928,29 @@ header a {
     font-weight: bold;
 }
 /* Estilos para el modal */
-.modal {
+.modal,.modalBtn {
     display: none; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 50; 
     left: 0;
     top: 0;
     width: 100%; 
     height: 100%; 
+    align-items: center;
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
 }
 
+.modal-content .fondoForm{
+    width: 100%;
+}
+#submit-btn{
+    font-weight: bold;
+}
 /* Contenido del modal */
-.modal-content {
+.modal .modal-content {
     background-color: #fff;
-    margin: 20% auto; 
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 100%; 
@@ -801,6 +958,36 @@ header a {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
+.modalBtn .modal-content{
+    background-color: #fff;
+    margin: 3% auto;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.modalBtn .fondoForm form .tagForm{
+    width: 70%;
+}
+.modalBtn .fondoForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modalBtn .form-control {
+    width: 100%;
+}
+.modalBtn .auth {
+    width: 70%;
+}
+.modalBtn #btn-enviar{
+    margin-right: 63% !important;
+}
+.modalBtn .fondoForm form .text-center{
+    width: 70%;
+}
+
 
 /* Botón de cierre */
 .close {
@@ -809,7 +996,19 @@ header a {
     font-size: 28px;
     font-weight: bold;
 }
-
+.closeBtn {
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    width: 4%;
+}
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 .close:hover,
 .close:focus {
     color: black;
@@ -822,6 +1021,27 @@ header a {
 .email{
     font-size: 12px !important;
 }
+.auth{
+    color: white;
+}
+
+.modalBtn .col-md-12{
+    width: 70% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.modalBtn .enviarBtn{
+    width: 68%;
+    text-align: left;
+    margin-top: 2rem;
+}
+.modalTxtForm{
+    padding-left: 150px;
+    padding-right: 150px;
+}
 
 /*responsive*/
 
@@ -831,12 +1051,107 @@ header a {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .modal-content{
+@media only screen and (max-width: 768px) {
+    .buttonAspirante .BtnModal2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .modalBtn .col-md-12 {
+        width: 100% !important;}
+    .closeBtn{
+        position: relative;
+        left: -1rem;
+    }
+    .contentFormTxt{
+        padding: 20px;
+    }
+    .fondoForm{
+        padding: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .modalBtn .modal-content{
+        width: 100%;
+    }
+    .testimoniosVideos .owl-nav{
+        display: none;
+    }
+    .aspiranteImg img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .modal .modal-content {
         margin: 50% auto;
     }
-    .txt_content a{
-        width: 35%;
+    .listAspirante{
+        font-size: 15px;
+    }
+    .btnNav{
+        display: none;
+    }
+    .buttonAspirante{
+        width: 100%;
+    }
+    .listAspirante ul{
+        margin-top: 3rem;
+    }
+    .listAspirante {
+        width: 100%;
+    }
+    .aspiranteImg {
+        width: 80%;
+    }
+    .aspirantePerfil{
+        flex-direction: column-reverse;   
+        align-items: center;
+    }
+    .fondoForm{
+        border-radius: 0;
+    }
+    .txtForm {
+        font-size: 12px;
+    }
+    .btonFormEnviar{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .aceptoP {
+        width: 100%;
+    }
+    .containerForm{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .fondoForm{
+        width: 100%;
+    }
+    .formularioImg {
+        display: none;
+    }
+    #carousel2 .owl-dots{
+        position: absolute;
+        top: 38rem;
+        width: 100%;
+    }
+    #carousel2 .item{
+        display: flex;
+        justify-content: center;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        zoom: 1.5 !important;
+    }
+    #carousel2{
+        height: 100% !important;
+        margin-bottom: 25%;
+        margin-top: 3rem;
+    }
+    #carousel2 .facultad{
+        font-size: 10px;
+    }
+    #carousel2 .carrera{
+        font-size: 12px;
     }
     .mobile{
         display: block !important;
@@ -871,7 +1186,7 @@ header a {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 10rem;
+        top: 7rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -883,7 +1198,7 @@ header a {
     .nav-menu.active {
         left: 0;
         z-index: 10;
-        top: 8rem;
+        top: 6rem;
         width: 100%;
     }
     .nav-item {
@@ -927,16 +1242,9 @@ header a {
         gap: 0.5rem;
     }
     .BannerGeneral .TxtBannerPricipal .txt_red {
-        width: 77%;
+        width: 85%;
     }
     .TxtBannerPricipal .txt_red h2 {
-        font-size: 18px;
-        padding: 5px;
-    }
-    .BannerGeneral .TxtBannerPricipal .txt_black{
-        width: 35%;
-    }
-    .BannerGeneral .TxtBannerPricipal .txt_black h2{
         font-size: 18px;
         padding: 5px;
     }
@@ -947,60 +1255,6 @@ header a {
         font-size: 14px;
     }
 
-    .BannerCarreras .TxtBannerPricipal .txt_bold {
-        width: 90%;
-        font-size: 35px;
-    }
-    .BannerCarreras .TxtBannerPricipal .txt_red{
-        width: 95%;
-    }
-    .BannerCarreras .TxtBannerPricipal .txt_red h2{
-        font-size: 20px;
-        text-align: left;
-        font-weight: bold;
-    }
-    .BannerCarreras .TxtBannerPricipal .txt_second {
-        width: 100% !important;
-        margin: 0;
-    }
-    .BannerCarreras .container{
-        margin-top: -5rem;
-    }
-    .BannerCarreras{
-        background-image: url(./assets/img/la-catolica-universidad.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .BannerCarreras .hashtag p{
-        font-size: 14px;
-    }
-
-    .BannerMaestrias{
-        background-image: url(./assets/img/universidad-catolica-sede-sapientiae.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .BannerMaestrias .TxtBannerPricipal .txt_bold {
-        width: 100%;
-        font-size: 35px;
-    }
-    .BannerMaestrias .TxtBannerPricipal .txt_second{
-        width: 95% !important;
-    }
-    .BannerMaestrias .container{
-        margin-top: -5rem;
-    }
-    .BannerMaestrias .TxtBannerPricipal .txt_red{
-        width: 57%;
-    }
-    .BannerMaestrias .TxtBannerPricipal .txt_red h2 {
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .BannerMaestrias .hashtag p{
-        font-size: 14px;
-    }
     .contentGeneral{
         flex-wrap: wrap;
     }
@@ -1012,9 +1266,48 @@ header a {
         gap: 2rem;
     }
     .cardGeneralCarreras, .cardGeneralMaestrias {
+        width: 90%;
+    }
+
+    .generalInfoSecction {
         width: 100%;
     }
-   
+    .filial, .convenio{
+        flex-direction: row;
+    }
+    .filial .txtInfo{
+        font-size: 12px;
+    }
+    .filial img{
+        width: 34%;
+    }
+
+    .convenio .txtInfo{
+        font-size: 12px;
+    }
+
+    .info-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .lineDetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .details-item .info-item{
+        flex-direction: row;
+        width: 70%;
+        border-right: none;
+    }
+    .logos img {
+        width: 40%;
+    }
+    .details-item{
+        flex-wrap: wrap;
+    }
+    .acreditacionesImg {
+        width: 40% !important;
+    }
     .info-item .tituloInfoCorto{
         font-size: 3em;
     }
@@ -1048,7 +1341,7 @@ header a {
     .navbar .nav-menu .dropdown::before{
         display: none;
     }
-    .fa-angle-double-right{
+    header .fa-angle-double-right{
         color: white !important;
     }
     .navbar .nav-menu .dropdown .opcionesPregrado a:hover {
@@ -1085,12 +1378,51 @@ header a {
 
 /* Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
-    .modal-content{
-        margin: 50% auto;
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    .testimoniosVideos .owl-nav{
+        left: -7%;
+        width: 114%;
     }
-    .cardGeneralCarreras, .cardGeneralMaestrias {
-        width: 45%;
+    .navbar .nav-menu1{
+        width: 65%;
+    }
+    .modalTxtForm{
+        padding: 0;
+    }
+    .closeBtn{
+        width: 6%;
+    }
+    .CardContent{
+        width: 35%;
+    }
+    
+    .TxtBannerPricipal .txt_second{
+        width: 65%;
+    }
+    .navbar .logo{
+        width: 25%;
+    }
+    .aspiranteImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+    .btonFormEnviar{
+        text-align: left;
+    }
+    .formularioImg{
+        width: 40%;
+    }
+    .fondoForm{
+        width: 60%; 
+    }
+    .aceptoP {
+        width: 100%;
+    }
+    .oferta .contentGeneral{
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
     }
     .contentNavBlack{
         gap: 3rem;
@@ -1102,7 +1434,7 @@ header a {
         width: 100%;
     }
     .navbar .logo img {
-        width: 20%;
+        width: 85%;
     }
     .owl-nav {
         width: 100%;
@@ -1115,17 +1447,11 @@ header a {
     .BannerGeneral .TxtBannerPricipal .txt_red{
         width: 70%;
     }
-    .BannerCarreras .TxtBannerPricipal .txt_red{
-        width: 73%;
-    }
-    .BannerMaestrias .TxtBannerPricipal .txt_red{
-        width: 36%;
-    }
-    .cardGeneralCarreras, .cardGeneralMaestrias{
-        height: 42rem;
+    .cardGeneralCarreras{
+        width: 100%;
     }
     .oferta .saberMasMaestria {
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
     .details-item .info-item{
         width: 60%;
